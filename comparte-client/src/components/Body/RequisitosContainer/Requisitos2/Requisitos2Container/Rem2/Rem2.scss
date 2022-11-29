@@ -1,0 +1,190 @@
+@import "../../../../../../assets/sass/variables";
+
+
+.rem2{
+    margin: 0;
+
+    width: 100%;
+
+    display: flex;
+    flex-wrap: nowrap;
+
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+
+    .req{
+        margin: 0;
+
+        display: flex;
+        
+        justify-content: space-evenly;
+        align-items: center;
+
+        gap: 2vh;
+
+        width: 65%;
+
+        .info{
+            margin: 0;
+
+            width: 7vh;
+            height: 7vh;
+
+            background-color: #11556e;
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+
+            color: #fefefe;
+
+            border-radius: 0.7rem;
+
+            font-size: 4vh;
+        }
+
+        .question{
+            margin: 0;
+
+            width: 80%;
+            min-height: 7vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding-left: 2vh;
+            padding-right: 2vh;
+
+            background-color: #e3f5f3;
+
+            border-radius: 0.7rem;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+            p{
+                margin: 0;
+                width: 100%;
+
+                text-align: left;
+
+                font-size: 2vh;
+                font-family: $theme-text-font;
+
+                padding-left: 2vh;
+                padding-right: 2vh;
+            }
+        }
+    }
+
+    .entry{
+        margin: 0;
+
+        width: 20%;
+
+        display: flex;
+
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+
+        gap: 4vh;
+
+        label{
+            margin: 0;
+
+            font-size: 2vh;
+            font-family: $theme-text-font;
+            display: flex;
+
+            gap: 1vh;
+
+            input[type="radio"]{
+                /* Add if not using autoprefixer */
+                -webkit-appearance: none;
+                appearance: none;
+                /* For iOS < 15 to remove gradient background */
+                background-color: #fff;
+                /* Not removed via appearance */
+                margin: 0;
+            }
+
+            input[type="radio"] {
+                appearance: none;
+                background-color: rgb(163, 159, 159);
+                margin: 0;
+                font: inherit;
+                color: currentColor;
+                width: 3vh;
+                height: 3vh;
+                border: 0.5vh solid currentColor;
+                border-radius: 50%;
+                transform: translateY(-0.1vh);
+
+                display: grid;
+                place-content: center;
+            }
+              
+            input[type="radio"]::before {
+                margin: 0;
+                content: "";
+                width: 1.5vh;
+                height: 1.5vh;
+                border-radius: 50%;
+                transform: scale(0);
+                transition: 120ms transform ease-in-out;
+                box-shadow: inset 2vh 2vh #e3f5f3;
+            }
+              
+            input[type="radio"]:checked::before {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px){
+    .rem2{
+    
+        .req{
+    
+            .question{
+                width: 80%;//80% 61vh
+                height: 7vh;
+    
+                p{
+                    font-size: 1.4vh;//3vh
+    
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+            }
+        }
+    
+        .entry{
+
+            width: 20%;
+            height: 7vh;
+
+            gap: 0.2vh;
+            flex-wrap: wrap;
+
+            label{
+                font-size: 1.5vh;
+                width: 5vh;
+
+                input[type="radio"] {
+                    width: 1.5vh;
+                    height: 1.5vh;
+                    border: 0.25vh solid currentColor;
+                }
+                
+                input[type="radio"]::before {
+                    width: 0.75vh;
+                    height: 0.75vh;
+                    box-shadow: inset 1vh 1vh #e3f5f3;
+                }
+            }
+        }
+    }
+}

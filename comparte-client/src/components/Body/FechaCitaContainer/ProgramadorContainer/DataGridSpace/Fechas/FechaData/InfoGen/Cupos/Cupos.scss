@@ -1,0 +1,21 @@
+@import "../../../../../../../../../assets/sass/variables";
+
+.cupos{
+    margin: 0;
+
+    font-size: 0.75rem;
+    font-family: $theme-text-font;
+
+    width: 18vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 640px){
+    .cupos{
+        width: 6vh;
+        font-size: 1vh;
+    }
+}

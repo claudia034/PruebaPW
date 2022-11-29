@@ -1,0 +1,56 @@
+@import "./../../../../variables";
+
+
+.nav-button {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 0.5em;
+
+    .nav-icon {
+        height: 28px;
+        width: 28px;
+    }
+
+    background-color: white;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    height: 2.5em;
+    width: 8em;
+    border-radius: 5px;
+
+    font-size: 100%;
+    font-family: 'Work Sans', sans-serif;
+
+
+    text-decoration: none;
+
+    color: $text-color-alt;
+    font-family: $theme-text-font;
+
+    text-transform: none;
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition: 0.5s;
+    
+}
+
+@media only screen and (max-width: 768px) {
+
+    .nav-button {
+
+        height: 40px;
+        width: 80px;
+    
+        .nav-icon {
+            height: 28px;
+            width: 28px;
+        }
+        
+    }
+}

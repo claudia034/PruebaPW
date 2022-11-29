@@ -1,0 +1,16 @@
+@import "../../../../assets/sass/variables";
+
+.bannereditarperf{
+    margin: 0;
+
+    background-color: $color-primary;
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7rem;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}

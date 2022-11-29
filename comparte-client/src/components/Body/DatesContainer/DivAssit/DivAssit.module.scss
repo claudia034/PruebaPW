@@ -1,0 +1,29 @@
+
+.table-name-icon {
+
+    width: 80%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1em;
+
+    margin: 0;
+    padding: 0;
+
+    .icon {
+        width: 32px;
+        height: 32px;
+        margin: 0;
+        padding: 0;
+    }
+
+    p {
+        width: 60%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+}

@@ -1,0 +1,16 @@
+.infogen{
+    margin: 0;
+
+    background-color: none;
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+@media screen and (max-width: 640px){
+    .infogen{
+        width: 16vh;
+    }
+}

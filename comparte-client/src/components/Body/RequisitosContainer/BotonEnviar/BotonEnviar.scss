@@ -1,0 +1,39 @@
+@import '../../../../assets/sass/variables';
+
+.botonenviar{
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    button{
+        background-color: $buttons-color;
+        color: $color-accent;
+
+        border: none;
+
+        width: 8rem;
+        height: 2.5rem;
+
+        border-radius: 0.4rem;
+
+        font-size: 1rem;
+        font-family: $theme-text-font;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+        cursor: pointer;
+    }
+
+    button:hover{
+        opacity: 0.9;
+    }
+
+    button:active{
+        transform: scale(1.05);
+    }
+}

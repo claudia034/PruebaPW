@@ -1,0 +1,40 @@
+@import "../../../../../assets/sass/variables";
+
+.flechita2{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    padding-top: 2rem;
+
+    background-color: #fefefe;
+
+    figure{
+        margin: 0;
+        width: 7rem;
+        height: 4rem;
+
+        svg{
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            color: $color-primary;
+
+            object-fit:fill;
+            margin: 0;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+
+            object-fit:fill;
+            margin: 0;
+        }
+    }
+}

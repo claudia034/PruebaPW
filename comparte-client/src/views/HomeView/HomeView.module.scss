@@ -1,0 +1,465 @@
+@import "../../assets/sass/variables";
+
+.vistamaincontainer{
+    margin: 0;
+
+    font-weight: 300;
+
+    color: black;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    flex-wrap: wrap;
+
+    .bannermain{
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+
+        background-color: $color-primary;
+
+        width: 100%;
+
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+
+        .contenedor{
+            padding-top: 2vh;
+            padding-bottom: 2vh;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+
+            gap: 7vh;
+
+            .txtcon{
+                margin: 0;
+                width: 40%;
+                min-width: 40vh;
+
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+
+                padding: 2rem;
+
+                h3{
+                    width: 100%;
+                    margin: 0;
+                    font-family: $theme-title-font;
+                    font-size: 2.5vh;
+                    color: $color-accent;
+
+                    letter-spacing: 5px;
+                    text-transform: uppercase;
+                }
+                h1{
+                    margin: 0;
+                    padding: 0.3em 0;
+                    width: 100%;
+                    font-family: $theme-title-font;
+                    font-size: 7vh;
+                    color: $color-accent
+                }
+                p{
+                    text-align: left;
+                    margin: 0;
+                    color: $color-accent;
+                    font-family: $theme-text-font;
+                    font-size: 2vh;
+                    line-height: 140%;
+                }
+            }
+
+            .imgcon{
+                margin: 0;
+                width: 40%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+
+                figure{
+                    width: 90%;
+                    min-width: 35vh;
+                    height: 90%;
+                    min-height: 25vh;
+                    margin: 0;
+
+                    padding: 0;
+
+                    padding-top: 2rem;
+                    padding-bottom: 2rem;
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+
+                        object-fit:fill;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .graficas{
+        margin: 0;
+
+        width: 90%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+
+        .contenedor2{
+            margin: 2rem;
+            display: flex;
+
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+
+            gap: 2rem;
+
+            h1{
+                width: 100%;
+                text-align: center;
+                font-family: $theme-title-font;
+                font-size: 6vh;
+            }
+            p{
+                margin: 0;
+                text-align: center;
+                padding-left: 20vh;
+                padding-right: 20vh;
+                font-family: $theme-text-font;
+            }
+
+            .graficasimg{
+                margin: 0;
+                width: 100%;
+
+                display: flex;
+                flex-wrap: wrap;
+
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+
+                gap: 5vh;
+
+                figure{
+                    width: 30%;
+                    min-width: 35vh;
+                    height: 45%;
+                    min-height: 25vh;
+                    margin: 0;
+
+                    padding: 0;
+
+                    padding-top: 2rem;
+                    padding-bottom: 2rem;
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+
+                        object-fit:fill;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .compartiendovidas{
+        margin: 0;
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+
+        background-color: $color-primary;
+
+        .contenedor3{
+            margin: 0;
+            width: 90%;
+            padding-top: 2rem;
+            padding-bottom: 1rem;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+
+            gap: 8vh;
+
+            figure{
+                width: 35%;
+                min-width: 25vh;
+                height: 40%;
+                min-height: 5vh;
+                margin: 0;
+
+                padding: 0;
+
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+
+                    object-fit:fill;
+                    margin: 0;
+                }
+            }
+
+            .texto1{
+                margin: 0;
+                width: 30%;
+
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-items: center;
+                align-content: center;
+                gap: 1vh;
+
+                h3{
+                    font-family: 'Work Sans';
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 125%;
+                    letter-spacing: 5px;
+                    text-transform: uppercase;
+
+                    margin: 0;
+                    color: $color-accent;
+                    font-size: 3vh;
+                    text-align: left;
+                }
+                h1{
+                    letter-spacing: 2px;
+                    padding: 0.5em 0;
+                    font-family: 'Crimson Text' , sans-serif;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 125%;
+
+                    margin: 0;
+                    color: white;
+                    font-size: 6vh;
+                    text-align: left;
+                }
+                p{
+                    font-weight: 400;
+                    line-height: 150%;
+                    margin: 0;
+                    font-family: 'Work Sans', sans-serif;
+                    color: $color-accent;
+                    text-align: left;
+                    font-size: 2vh;
+                }
+            }
+        }
+    }
+    .nuestroequipo{
+        margin: 0;
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+
+        .contenedor4{
+            margin: 0;
+            width: 90%;
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+
+            gap: 2vh;
+
+            h2{
+
+                font-family: 'Work Sans';
+                font-style: normal;
+                font-weight: 700;
+                line-height: 125%;
+
+                letter-spacing: 5px;
+                text-transform: uppercase;
+
+                margin: 0;
+                width: 100%;
+                text-align: center;
+                font-family: $theme-title-font;
+            }
+            h1{
+                margin: 0;
+                width: 100%;
+                text-align: center;
+                font-family: $theme-title-font;
+                font-size: 6vh;
+            }
+            p{
+                font-size: 2vh;
+                padding: 1.5em;
+                margin: 0;
+                width: 100%;
+                padding-left: 15vh;
+                padding-right: 15vh;
+                text-align: center;
+                font-family: $theme-text-font;
+            }
+
+            .tarjetascontainer{
+                width: 90%;
+                margin: 0;
+                padding-top: 1rem;
+
+                display: flex;
+                flex-wrap: wrap;
+
+                justify-content: space-around;
+                align-content: center;
+                align-items: center;
+
+                gap: 4vh;
+
+                .tarjeta{
+                    width: 30vh;
+                    margin: 0;
+                    height: 40vh;
+
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    justify-content: center;
+                    align-items: center;
+                    align-content: center;
+
+                    border-radius: 2rem;
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+                    figure{
+                        width: 15vh;
+                        height: 15vh;
+                        margin: 0;
+        
+                        padding: 0;
+
+                        border-radius: 4rem;
+        
+                        img{
+                            border-radius: 4rem;
+                            width: 100%;
+                            height: 100%;
+        
+                            object-fit:fill;
+                            margin: 0;
+                        }
+                    }
+                    .info{
+                        margin: 0;
+
+                        width: 100%;
+                        height: 50%;
+                        display: flex;
+                        flex-wrap: wrap;
+
+                        color: black;
+
+                        justify-content: center;
+                        align-items: center;
+                        align-content: center;
+                        gap: 2vh;
+
+                        h2{
+                            margin: 0;
+                            width: 100%;      
+                            font-size: 2vh;               
+                        }
+                        p{
+                            margin: 0;
+                            width: 100%;
+                            padding: 0;
+                        }
+                    }
+
+                    transition: 1s;
+                }
+
+                .tarjeta:hover{
+                        transform: scale(1.05);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .vistamaincontainer{
+        .bannermain{
+            .contenedor{
+                gap: 0;
+                .imgcon{
+                    padding-top: 0;
+                }
+            }
+        }
+        .graficas{
+            .contenedor2{
+                p{
+                    padding-left: 2vh;
+                    padding-right: 2vh;
+                }
+
+                .graficasimg{
+                    gap: 1vh;
+                }
+            }
+        }
+        .compartiendovidas{
+            .contenedor3{
+                gap: 1vh;
+                .texto1{
+                    width: 80%;
+                    gap: 1vh;
+                    padding-bottom: 2rem;
+                }
+            }
+        }
+        .nuestroequipo{
+            .contenedor4{
+                gap: 1vh;
+                p{
+                    padding-left: 4vh;
+                    padding-right: 4vh;
+                }
+            }
+        }
+    }
+}

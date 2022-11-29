@@ -1,0 +1,27 @@
+@import "../../../../../../assets/sass/variables";
+
+.datagencon{
+    margin: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    //flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    .p-text{
+        padding-bottom: 2rem;
+    }
+
+    p{
+        width: 100%;
+
+        text-align: center;
+
+        font-size: 1.3rem;
+        font-family: $theme-text-font;//cambiar
+    }
+}

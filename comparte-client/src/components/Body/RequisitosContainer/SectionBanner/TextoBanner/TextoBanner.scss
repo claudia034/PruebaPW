@@ -1,0 +1,36 @@
+@import "../../../../../assets/sass/variables";
+
+.textobanner{
+    margin: 0;
+
+    width: 40vh;
+
+    padding: 0;
+    padding-top: 3rem;
+
+    h1{
+        margin: 0;
+        font-size: 5vh;
+        font-family: $theme-title-font;
+        color: #fefefe;
+        width: 100%;
+        text-align: left;
+    }
+    h3{
+        margin: 0;
+        color: #fefefe;
+
+        padding-bottom: 1rem;
+        font-size: 2vh;
+        font-family: $theme-title-font;
+        text-align: left;
+
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .textobanner{
+        padding-bottom: 0;
+    }
+}

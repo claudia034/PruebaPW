@@ -1,0 +1,24 @@
+@import '../../../../assets/sass/variables';
+
+.flechitac {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+
+    background-color: $color-primary;
+
+    svg {
+        width: 6rem;
+        height: 4rem;
+
+        object-fit: fill;
+        margin: 0;
+        color: white;
+    }
+
+}

@@ -1,0 +1,21 @@
+.camposcontainer{
+    margin: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    gap: 5vh;
+
+    width: 140vh;
+}
+
+@media screen and (max-width: 640px){
+    .camposcontainer{
+        width: 35vh;
+
+        justify-content: center;
+    }
+}

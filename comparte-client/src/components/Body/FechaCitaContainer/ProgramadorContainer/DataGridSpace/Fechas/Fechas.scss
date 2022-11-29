@@ -1,0 +1,33 @@
+.fechas{
+    margin: 0;
+    background-color: #e3f5f3;
+
+    width: 60%;
+    height: 20rem;
+
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+    border-radius: 1rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+
+    overflow-y: auto;//scroll
+
+    scroll-behavior: smooth;
+    
+}
+
+.fechas::-webkit-scrollbar{
+    width: 0;
+    height: 0;//pa q no se vea
+}

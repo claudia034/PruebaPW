@@ -1,0 +1,25 @@
+@import "../../../../../../assets/sass/variables";
+
+.datamain{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    max-width: 30%;
+    height: auto;
+
+    min-width:22rem;
+
+    h2{
+        text-align: left;
+        color: #fefefe;
+        width: 100%;
+
+        font-family: $theme-title-font;
+
+        margin: 0;
+    }
+}

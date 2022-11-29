@@ -1,0 +1,62 @@
+@import "../../../../../../../../assets/sass/variables";
+
+.dui{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1.5rem;
+    padding-top: 1rem;
+    width: 100%;
+
+    justify-content: flex-start;
+
+    div{
+        background-color: #fefefe;
+        border-radius: 1rem;
+
+        width: 80%;//22rem
+        height: 2.8rem;
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 1rem;
+
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+        p{
+            font-family: $theme-text-font;//cambiar
+        }
+    }
+    div:first-child{
+        background-color: #e3f5f3;
+        border-radius: 1rem;
+        padding: 0;
+
+        width: 2.8rem;//2.8rem
+        height: 2.8rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 1rem;
+        margin: 0;
+
+        figure{
+            width: 2.3rem;
+            height: 2.3rem;
+            margin: 0;
+            padding: 0;
+
+            svg{
+                width: 100%;
+                height: 100%;
+
+                object-fit:fill;
+                margin: 0;
+
+                font-size: small;
+            }
+        }
+    }
+}

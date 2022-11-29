@@ -1,0 +1,36 @@
+@import "../../../../../assets/sass/variables";
+
+.textobannercita{
+    margin: 0;
+
+    width: 40vh;
+
+    padding: 0;
+    padding-top: 3rem;
+
+    h1{
+        margin: 0;
+        font-size: 5vh;
+        color: #fefefe;
+        width: 100%;
+        text-align: left;
+        font-family: $theme-title-font;
+    }
+    h3{
+        margin: 0;
+        color: #fefefe;
+
+        padding-bottom: 1rem;
+        font-size: 2vh;
+        text-align: left;
+        font-family: $theme-title-font;
+
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .textbannercita{
+        padding-bottom: 0;
+    }
+}

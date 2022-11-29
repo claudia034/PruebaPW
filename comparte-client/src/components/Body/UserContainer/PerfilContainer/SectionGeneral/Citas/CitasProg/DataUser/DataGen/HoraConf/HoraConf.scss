@@ -1,0 +1,39 @@
+@import "../../../../../../../../../../assets/sass/variables";
+
+.horaconf{
+    margin: 0;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 0.5rem;
+
+    p{
+        font-size: 0.75rem;
+        font-family: $theme-text-font;
+    }
+
+    input{
+        width: 2vh;
+        height: 2vh;
+
+        border-radius: 0.5rem;
+        border: none;
+    }
+
+    input:checked::after{
+        background-color: #00C896;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .horaconf{
+        gap: 0.5vh;
+
+        p{
+            font-size: 1vh;
+        }
+    }
+}

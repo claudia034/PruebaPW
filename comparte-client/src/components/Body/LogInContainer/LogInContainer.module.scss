@@ -1,0 +1,313 @@
+@import "./../../../variables";
+
+.main-section {
+    display: flex;
+    min-height: 60vh;
+    background-color: $background-color;
+
+    .main-container {
+        // flex
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        gap: 2em;
+
+
+        //margin and padding
+        margin: 0;
+        padding: 0 4em 0 4em;
+
+        //size
+        width: 100%;
+
+        .login-main-container {
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            width: 50%;
+
+            .login-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 3.5em;
+
+                width: 80%;
+
+                flex-wrap: wrap;
+
+                .text-box {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+
+                    gap: 1em;
+
+
+                    h2 {
+                        margin: 0;
+                        padding: 0;
+                        width: 100%;
+                        text-align: left;
+
+                        /* Typography/Label/Bold */
+
+                        font-family: $theme-text-font;
+                        font-weight: 700;
+                        font-size: 1em;
+
+                        letter-spacing: 1vh;
+                        text-transform: uppercase;
+
+                        /* Color/Dark/100 */
+
+                        color: $text-color-alt;
+                    }
+
+                    h1 {
+                        width: 100%;
+                        margin: 0;
+                        padding: 0;
+                        text-align: left;
+
+                        /* Typography/Heading/Bold 1 */
+
+                        font-family: $theme-title-font;
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 3em;
+                        /* identical to box height, or 80px */
+
+                        /* Color/Dark/100 */
+
+                        color: $text-color-alt;
+                    }
+                }
+
+                .login-box {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+
+                    margin: 0;
+                    padding: 0;
+
+                    gap: 2em;
+
+                    .form-container {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        flex-wrap: wrap;
+
+                        width: 100%;
+                        gap: 2em;
+
+                        margin: 0;
+                        padding: 0;
+
+                        p {
+                            margin: 0;
+                            width: 100%;
+                            text-align: center;
+                            align-self: center;
+
+                            // font
+
+                            font-family: $theme-text-font;
+                            font-size: 1em;
+
+                            //color
+
+                            color: $text-color-alt;
+
+                            a {
+                                text-decoration: none;
+                                font-weight: 900;
+                                color: $text-color-alt;
+                            }
+                        }
+
+                        .login-input {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: flex-start;
+                            align-items: center;
+                            gap: 1em;
+                            width: 100%;
+
+                            margin: 0;
+                            padding: 0;
+
+                            .icon {
+                                //size
+                                width: 3em;
+                                height: 3em;
+
+                                //padding y margin
+                                margin: 0;
+                                padding: 0.5em;
+
+                                // color - background
+
+                                color: white;
+                                background-color: $color-primary;
+
+                                // border
+                                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                                border-radius: 20px;
+                                border: none;
+                            }
+
+                            input {
+                                /*size*/
+                                width: 80%;
+                                height: 8vh;
+
+                                /*backgorund color*/
+                                background: #E3F5F3;
+
+                                /*border*/
+                                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                                border-radius: 20px;
+                                border: none;
+
+                                /*font*/
+                                font-family: inherit;
+                                font-size: 1em;
+                                overflow: auto;
+
+                                margin: 0;
+                                padding: 0 2em 0 2em;
+
+                                transition: 0.5s;
+                            }
+
+                            input:focus {
+                                outline: none;
+                            }
+
+                            input:hover {
+                                transform: scale(1.025);
+                            }
+                        }
+
+                        .login-buttons {
+
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                            align-self: center;
+                            flex-wrap: wrap;
+
+                            gap: 2em;
+                            width: 60%;
+
+                            Button {
+                                height: 3em;
+                            }
+                        }
+                    }
+
+                }
+
+                p {
+                    margin: 0;
+                    width: 100%;
+                    text-align: center;
+                    align-self: center;
+
+                    // font
+
+                    font-family: $theme-text-font;
+                    font-size: 1em;
+
+                    //color
+
+                    color: $text-color-alt;
+
+                    a {
+                        text-decoration: none;
+                        font-weight: 900;
+                        color: $text-color-alt;
+                    }
+                }
+            }
+        }
+
+        .img-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            width: 40%;
+
+            margin: 0;
+            padding: 0;
+
+            figure {
+                width: 500px;
+                height: 500px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}
+
+// Responsive
+
+@media (max-width: 768px) {
+    .main-section {
+        .main-container {
+            .login-main-container {
+                width: 100%;
+                .login-container{
+                    .login-box{
+                        .form-container{
+                            .login-buttons {
+                                width: 100%;
+                        
+                                Button {
+                                    width: 15em;
+                                    height: 5em;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .img-container {
+                width: 100%;
+
+                figure {
+                    height: 200px;
+                    width: 200px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+    }
+}

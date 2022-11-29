@@ -1,0 +1,45 @@
+@import "../../../../../../../../../assets/sass/variables";
+
+.fecha{
+    margin: 0;
+
+    width: 18vh;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+
+    p{
+        font-size: 0.75rem;
+        font-family: $theme-text-font;
+    }
+
+    figure{
+        width: 1.5rem;
+        height: 1.5rem;
+
+        svg{
+            height: 100%;
+            width: 100%;
+
+            object-fit: fill;
+        }
+    }
+}
+
+@media screen and (max-width: 640px){
+    .fecha{
+        width: 6vh;
+        gap: 0.2vh;
+        p{
+            font-size: 1vh;
+        }
+
+        figure{
+            width: 2vh;
+            height: 2vh;
+        }
+    }
+}
