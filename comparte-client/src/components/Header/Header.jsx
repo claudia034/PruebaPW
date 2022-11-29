@@ -13,14 +13,15 @@ import Menu from './Navbar/NavbarMenu/NavbarMenu';
 // import Navbar from './Navbar/Navbar';
 
 const Header = () => {
+
   return (
     <header className={classes["Header"]} >
       <nav>
         <div className={classes["nav-brand-container"]}>
-          <figure>
+          <figure >
             <img src={Logo} alt="ComparteINC Logo"></img>
           </figure>
-          <h1> ComparteINC </h1>
+          <Link to = "/"><h1>  ComparteINC </h1></Link>
         </div>
 
         <div className={classes["nav-links-list"]}>

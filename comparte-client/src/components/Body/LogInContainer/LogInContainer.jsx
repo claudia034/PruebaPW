@@ -25,42 +25,35 @@ import { useUserContext } from "../../../contexts/UserContext";
 
 // IMPORT GAPI
 
-import GoogleLogin from 'react-google-login';
+import {GoogleLogin} from 'react-google-login';
 
-import { gapi } from 'gapi-script';
+import { gapi,loadGapiInsideDOM } from 'gapi-script';
 
 
 // CREAMOS EL COMPONENTE 
 
 const LogInContainer = ({ onLogin = () => { } }) => {
 
-    const {setUser} = useUserContext();
+    const {loginGoogle} = useUserContext();
+
+    const clientId = "329918589866-2e1coep0mi4o72ka5fdh0rem31uh29qh.apps.googleusercontent.com";
 
     // GOOGLE AUTH----------------------------------------------
 
-    const clientID = "329918589866-gkonr7r35d6n73ipjser4joe2u2f85kh.apps.googleusercontent.com";
+    useEffect(() => { const clientId = "329918589866-2e1coep0mi4o72ka5fdh0rem31uh29qh.apps.googleusercontent.com"; function start() { gapi.client.init({ clientId: clientId, scope: "", ux_mode: 'redirect' }); } gapi.load("client:auth2", start); });
 
-    useEffect(() => {
-        const start = () => {
-            gapi.auth2.init({
-                clientId: clientID,
-
-            })
-        }
-
-        gapi.load("client:auth2", start);
-
-    }, [])
-
-    const onSuccess = (response) => {
-        setUser(response.profileObj);
+    const onLoginHandlerGoogle = async (response) => {
+        //Ejecutar el servicio de login <- User context
+        console.log(response.profileObj.email);
+        await loginGoogle(response.profileObj.email);
     }
 
     const onSuccesManual = (response) => {
         onLogin(response.dui, response.password);
     }
 
-    const onFailure = () => {
+    const onFailure = (response) => {
+        console.log(response);
         console.log("Something went wrong");
     }
 
@@ -83,11 +76,11 @@ const LogInContainer = ({ onLogin = () => { } }) => {
                             <DivLoginInput onLoginDo = {onSuccesManual}/>
 
                             <p> o...
-                                <GoogleLogin
-                                    clientId={clientID}
-                                    onSuccess={onSuccess}
+                            <GoogleLogin
+                                    clientId={clientId}
+                                    onSuccess={onLoginHandlerGoogle}
                                     onFailure={onFailure}
-                                    cookiePolicy={"single_host_policy"}
+                                    isSignedIn={true}
                                 />
                             </p>
                         </div>

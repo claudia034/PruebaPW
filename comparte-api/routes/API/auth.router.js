@@ -15,6 +15,9 @@ router.post("/signup",
 router.post("/signin", 
   authController.login);
 
+router.post("/signinGoogle", 
+  authController.loginGoogle);
+
 router.get("/whoami", authentication, authController.whoami);
 
 router.post("/addDateToUser", authController.addDateToUser);

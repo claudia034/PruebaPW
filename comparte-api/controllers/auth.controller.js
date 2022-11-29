@@ -83,6 +83,32 @@ controller.login = async (req, res) => {
   }
 }
 
+controller.loginGoogle = async (req, res) => {
+  try {
+    const { identifier } = req.body;
+
+    //Paso 01: Verificar si el usuario existe
+    const user = await User.findOne({  email: identifier });
+
+    if (!user) {
+      return res.status(404).json({ error: "El usuario no existe" });
+    }
+
+    //Paso 03: Loggearlo
+    const token = createToken(user._id);
+    user.tokens = [token, ...user.tokens.filter(_token => verifyToken(_token)).splice(0, 4)];
+
+    await user.save();
+
+    //Paso 04: Registrar los tokens de usuario
+
+    return res.status(200).json({ token: token });
+  } catch (error) {
+    debug(error);
+    return res.status(500).json({ error: "Error inesperado" })
+  }
+}
+
 
 // FUNCION PARA OBTENER LOS DATOS DEL USUARIO 
 

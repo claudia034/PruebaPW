@@ -80,6 +80,32 @@ export const UserContextProvider = (props) => {
     }
   }
 
+  const loginGoogle = async (identifier) => {
+    startLoading();
+    try {
+      const { data } = await axios.post("/auth/signinGoogle", { identifier });
+      const _token = data.token;
+        
+      setToken(_token);
+      setTokenLS(_token);
+
+      toast.success("Signin successful");
+      //Guardar el LS nuestro token
+    } catch (error) {
+      const { status } = error.response || { status: 500 };
+      const msgs = {
+        "404": "User not found",
+        "401": "Unauthorized",
+        "500": "Unexpected error"
+      };
+
+      logout();
+      toast.error(msgs[String(status)]);
+    } finally {
+      stopLoading();
+    }
+  }
+
   const logout = () => {
     removeTokenLS();
     setToken(null);
@@ -169,7 +195,8 @@ export const UserContextProvider = (props) => {
     logout,
     register,
     setUser,
-    updateUser
+    updateUser,
+    loginGoogle,
   }
 
   return <UserContext.Provider value={state} {...props} />
